@@ -8,11 +8,26 @@ Compatible with all mobile devices and with a beautiful and pleasant user interf
 
 ## Color Pallete Variables
 
--
+  --first-color: #3cb34b;
+  --first-color-alt: #32352d;
+  --first-color-light: #acac9c;
+  --first-color-lighten: #c3a995;
+  --title-color: #3a5743;
+  --text-color: #1d0e0d;
+  --text-color-light: #6d6464;
+  --body-color: #f1ede1;
+  --container-color: #fff;
 
 ### Commit Log
 
+3/27/23
+
+- C&S HOME section && integrate javascript hide/show feature for nav-/toggle/close/links
+
 3/26/23
 
-
 - Init Commit
+
+#### Punch List
+
+
