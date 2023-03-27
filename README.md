@@ -22,6 +22,8 @@ Compatible with all mobile devices and with a beautiful and pleasant user interf
 
 3/27/23
 
+- C&S ABOUT section && integrate javascript change background header onScroll
+
 - C&S HOME section && integrate javascript hide/show feature for nav-/toggle/close/links
 
 3/26/23
