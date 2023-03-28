@@ -20,7 +20,13 @@ Compatible with all mobile devices and with a beautiful and pleasant user interf
 
 ## Commit Log
 
+3/28/23
+
+- 
+
 3/27/23
+
+- Site Live @ revolturbanfarms.org
 
 - C&S FAQS section && integrate javscript accordion toggle
 
