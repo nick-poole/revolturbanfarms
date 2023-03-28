@@ -18,9 +18,11 @@ Compatible with all mobile devices and with a beautiful and pleasant user interf
   --body-color: #f1ede1;
   --container-color: #fff;
 
-### Commit Log
+## Commit Log
 
 3/27/23
+
+- C&S Services Section
 
 - C&S STEPS section
 
@@ -32,6 +34,8 @@ Compatible with all mobile devices and with a beautiful and pleasant user interf
 
 - Init Commit
 
-#### Punch List
+## Punch List
 
-- Consider alternatea color pallete
+- Consider alternate color pallete.
+
+- Revisit SERVICES section to finalize descriptions etc
