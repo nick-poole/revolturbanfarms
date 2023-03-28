@@ -22,7 +22,9 @@ Compatible with all mobile devices and with a beautiful and pleasant user interf
 
 3/27/23
 
-- C&S Services Section
+- C&S FAQS section && integrate javscript accordion toggle
+
+- C&S SERVICES section
 
 - C&S STEPS section
 

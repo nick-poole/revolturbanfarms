@@ -511,7 +511,82 @@ the website, in dark theme
   transform: translateY(-0.5rem);
 }
 
-/*===== QUESTIONS =====*/
+/*===== FAQS =====*/
+.faqs {
+  background-color: var(--first-color-lighten);
+}
+
+.faqs__container {
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+}
+
+.faqs__group {
+  display: grid;
+  row-gap: 1.5rem;
+}
+
+.faqs__item {
+  background-color: var(--container-color);
+  border-radius: 0.25rem;
+}
+
+.faqs__item-title {
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+}
+
+.faqs__icon {
+  font-size: 1.25rem;
+  color: var(--title-color);
+}
+
+.faqs__description {
+  font-size: var(--smaller-font-size);
+  padding: 0 1.25rem 1.25rem 2.5rem;
+}
+
+.faqs__header {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  padding: 0.75rem 0.5rem;
+  cursor: pointer;
+}
+
+.faqs__content {
+  overflow: hidden;
+  height: 0;
+}
+
+.faqs__item,
+.faqs__header,
+.faqs__item-title,
+.faqs__icon,
+.faqs__description,
+.faqs__content {
+  transition: 0.3s;
+}
+
+.faqs__item:hover {
+  box-shadow: 0 2px 8px hsla(152, 4%, 15%, 0.35);
+}
+
+/*Rotate icon, change color of title and background*/
+.accordion-open .faqs__header,
+.accordion-open .faqs__content {
+  background-color: var(--first-color);
+}
+
+.accordion-open .faqs__item-title,
+.accordion-open .faqs__description,
+.accordion-open .faqs__icon {
+  color: #fff;
+}
+
+.accordion-open .faqs__icon {
+  transform: rotate(45deg);
+}
 
 /*===== CONTACT =====*/
 

@@ -42,3 +42,32 @@ function scrollHeader() {
   }
 }
 window.addEventListener("scroll", scrollHeader);
+
+/*===== QUESTIONS ACCORDION =====*/
+const accordionItems = document.querySelectorAll(".faqs__item");
+
+accordionItems.forEach((item) => {
+  const accordionHeader = item.querySelector(".faqs__header");
+
+  accordionHeader.addEventListener("click", () => {
+    const openItem = document.querySelectorAll("accordion-open");
+
+    toggleItem(item);
+
+    if (openItem && openItem !== item) {
+      toggleItem(openItem);
+    }
+  });
+});
+
+const toggleItem = (item) => {
+  const accordionContent = item.querySelector(".faqs__content");
+
+  if (item.classList.contains("accordion-open")) {
+    accordionContent.removeAttribute("style");
+    item.classList.remove("accordion-open");
+  } else {
+    accordionContent.style.height = accordionContent.scrollHeight + "px";
+    item.classList.add("accordion-open");
+  }
+};
