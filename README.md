@@ -22,7 +22,9 @@ Compatible with all mobile devices and with a beautiful and pleasant user interf
 
 3/28/23
 
-- 
+- C&S FOOTER section && insert resources links/logos
+
+- C&S CONTACT section && integrate focus feature on contact__input
 
 3/27/23
 
