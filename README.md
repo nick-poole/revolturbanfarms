@@ -20,7 +20,15 @@ Compatible with all mobile devices and with a beautiful and pleasant user interf
 
 ## Commit Log
 
+3/29/23
+
+- Integrate Media queries for small, medium, and large screens
+
 3/28/23
+
+- FEAT: Integrate webkit scrollbar
+
+- FEAT: Integrate scrollUp feature in bottom right corner
 
 - C&S FOOTER section && insert resources links/logos
 
@@ -49,3 +57,7 @@ Compatible with all mobile devices and with a beautiful and pleasant user interf
 - Consider alternate color pallete.
 
 - Revisit SERVICES section to finalize descriptions etc
+
+- Remove grid from FAQS, SERVICES, and FOOTER section & replace wwith flex-box 
+
+- Add link for "learn more" @line 135
