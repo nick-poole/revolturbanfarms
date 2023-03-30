@@ -22,6 +22,10 @@ Compatible with all mobile devices and with a beautiful and pleasant user interf
 
 3/30/23
 
+- ADD 5 additional HERO sections
+
+- Adjust max-width on container app.css line 143
+
 - Adjust HERO container breakpoints for each
 
 3/29/23

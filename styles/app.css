@@ -4,7 +4,7 @@
 /*VARIABLES CSS */
 /*suggested 3.5rem*/
 :root {
-  --header-height: 3.5rem; /*56px*/
+  --header-height: 2.5rem; /*56px*/
 
   /*========== Colors ==========*/
   /*Color mode HEX*/
@@ -140,9 +140,11 @@ the website, in dark theme
 }
 
 .container {
-  max-width: 968px;
-  margin-left: var(--mb-1-5);
-  margin-right: var(--mb-1-5);
+  max-width: 1200px;
+
+  margin: var(--mb-1-5);
+  /* margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5); */
 }
 
 .grid {
@@ -172,7 +174,6 @@ the website, in dark theme
 }
 
 .nav .container {
-  height: 170px;
   margin-left: 0;
 }
 
@@ -189,12 +190,12 @@ the website, in dark theme
   mix-blend-mode: multiply;
   filter: contrast(1.5);
   transition: 1s ease;
-  opacity: 1
+  opacity: 1;
 }
 .nav__logo-img2 {
   opacity: 0;
   /* display: none; */
-  transition: .1s ease;
+  transition: 0.1s ease;
 }
 
 /* eliminate if using img */
@@ -276,19 +277,6 @@ the website, in dark theme
   transition: 0.7s ease;
 }
 
-/* 
-
-.scroll-header .nav__logo-img1 {
-
-  transition: 0.7s ease;
-  opacity: 0;
-} 
-
-.scroll-header  .nav__logo-img2 {
-  transition: 0.7s ease;
-  opacity: 1;
-} */
-
 /*Active link */
 .active-link {
   position: relative;
@@ -299,7 +287,7 @@ the website, in dark theme
 .active-link::after {
   content: " ";
   position: absolute;
-  bottom: -.2rem;
+  bottom: -0.2rem;
   left: 0;
   width: 50%;
   height: 2px;
@@ -307,33 +295,75 @@ the website, in dark theme
 }
 
 /*===== HERO =====*/
-.hero {
+.hero-0,
+.hero-1,
+.hero-2,
+.hero-3,
+.hero-4,
+.hero-5 {
   width: 100%;
   height: 100vh;
-  background-image: url("/images/markus-spiske-vrbZVyX2k4I-unsplash (3).jpg");
   background-size: cover;
   background-position: center;
 }
 
+.hero-0 {
+  background-image: url("/images/markus-spiske-vrbZVyX2k4I-unsplash (1).jpg");
+}
+.hero-1 {
+  background-image: url("/images/yianni-mathioudakis-XRwb892hC5U-unsplash (1).jpg");
+  background-position: center;
+}
+
+.hero-2 {
+  background-image: url("/images/colin-lloyd-EIN81690PWM-unsplash (2).jpg");
+  background-position: left;
+}
+
+.hero-3 {
+  background-image: url("/images/baron-cole-CAAxCRmqDVQ-unsplash.jpg");
+  background-position: center;
+}
+
+.hero-4 {
+  background-image: url("/images/andra-c-taylor-jr-mM52YKqAER8-unsplash (1).jpg");
+  background-position: left;
+}
+
+.hero-5 {
+  background-image: url("/images/konexion-xNPPbsJmS2Q-unsplash (1).jpg");
+  background-position: left;
+}
+
 .hero__container {
   padding: 50px;
-  border: 2px dashed white;
+  width: 700px:
+
+  border: 3px dashed pink;
+  z-index: 100;
+}
+
+.hero-2 .hero__container,
+.hero-3 .hero__container,
+.hero-5 .hero__container {
+  position: relative;
+  top: 550px;
+  text-align: right;
 }
 
 .hero__title {
   color: var(--body-color);
   font-size: var(--big-font-size);
-  animation-duration: .9s;
+  animation-duration: 0.9s;
   animation: slide;
 }
 .hero__subtitle {
-color: var(--first-color);
+  color: var(--first-color);
 }
 
 /*===== HOME =====*/
 .home {
   padding: 0.5rem 0 0rem;
-  margin
 }
 
 .home__container {
@@ -345,6 +375,10 @@ color: var(--first-color);
 .home__img {
   width: 300px;
   justify-self: center;
+}
+
+.home__data {
+  margin: var(--mb-1-5);
 }
 
 .home__title {
@@ -923,11 +957,10 @@ color: var(--first-color);
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
   }
-  
 
   .hero__container {
     margin: 50px;
-   padding: 2rem 0 0 0;
+    padding: 2rem 0 0 0;
   }
 
   .home__img {
@@ -963,9 +996,9 @@ color: var(--first-color);
   /* .steps__container {
     grid-template-columns: repeat(2, 1fr);
   } */
-  
+
   .hero__container {
-   padding: 50px;
+    padding: 50px;
   }
 
   .services__description {
@@ -1006,7 +1039,7 @@ color: var(--first-color);
 
   .hero__container {
     margin: 50px 0 0 0;
-   padding: 50px;
+    padding: 50px;
   }
 
   /* .faqs__container, */
@@ -1145,7 +1178,6 @@ color: var(--first-color);
 
 @media screen and (min-width: 1200px) {
   .hero {
-
   }
   .home__social {
     right: -3rem;
