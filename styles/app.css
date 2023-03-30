@@ -263,22 +263,48 @@ the website, in dark theme
 /*Active link */
 .active-link {
   position: relative;
-  color: --var(--first-color);
+  color: var(--first-color);
 }
 
+/*check bottom*/
 .active-link::after {
   content: " ";
   position: absolute;
-  borrom: -0.5rem;
+  bottom: 0.5rem;
   left: 0;
   width: 50%;
   height: 2px;
   background-color: var(--first-color);
 }
 
+/*===== HERO =====*/
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/images/markus-spiske-vrbZVyX2k4I-unsplash (3).jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero__container {
+  
+  border: 2px dashed white;
+}
+
+.hero__title {
+  color: var(--body-color);
+  font-size: var(--big-font-size);
+  animation-duration: .9s;
+  animation: slide;
+}
+.hero__subtitle {
+color: var(--first-color);
+}
+
 /*===== HOME =====*/
 .home {
-  padding: 3.5rem 0 0rem;
+  padding: 0.5rem 0 0rem;
+  margin
 }
 
 .home__container {
@@ -865,6 +891,11 @@ the website, in dark theme
     margin-right: var(--mb-1);
   }
 
+  .hero__container {
+    margin: 0;
+   padding: 2rem 0 0 0;
+  }
+
   .home__img {
     width: 180px;
   }
@@ -898,7 +929,10 @@ the website, in dark theme
   /* .steps__container {
     grid-template-columns: repeat(2, 1fr);
   } */
-
+  
+  .hero__container {
+   padding: 3rem 0 0 0;
+  }
   .services__description {
     padding: 0 4rem;
   }
@@ -933,6 +967,11 @@ the website, in dark theme
   }
   .nav__menu {
     margin-left: auto;
+  }
+
+  .hero__container {
+    margin: 2rem 0 0 0;
+   padding: 3rem 0 0 0;
   }
 
   /* .faqs__container, */
