@@ -540,6 +540,7 @@ the website, in dark theme
 .faqs__group {
   display: grid;
   row-gap: 1.5rem;
+  /* grid-template-columns: repeat(2, 1fr); */
 }
 
 .faqs__item {
@@ -718,6 +719,9 @@ the website, in dark theme
   z-index: 10;
 }
 /*===== FOOTER =====*/
+.footer {
+  background-color: var(--first-color-alt);
+}
 .footer__container {
   row-gap: 3rem;
 }
@@ -729,18 +733,23 @@ the website, in dark theme
 .footer__content {
 } */
 
-.footer__logo-img {
+.footer__logo-img1 {
   height: 300px;
   width: 300px;
+}
+.footer__logo-img2 {
+  display: none;
 }
 
 .footer__title {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-1-5);
+  color: var(--first-color-lighten);
 }
 
 .footer__subscribe {
   background-color: var(--first-color-lighten);
+  margin-top: var(--mb-1);
   padding: 0.75rem;
   display: flex;
   justify-content: space-between;
@@ -766,6 +775,7 @@ the website, in dark theme
 
 .footer__info {
   font-size: var(--normal-font-size);
+  color: var(--first-color-lighten);
 }
 
 .footer__info .contact__tel,
@@ -803,8 +813,8 @@ the website, in dark theme
 .footer__copy {
   text-align: center;
   font-size: var(--small-font-size);
-  color: var(--text-color-light);
-  margin: 1rem 0 1rem;
+  color: var(--first-color-lighten);
+  margin: 5rem 0 1rem;
 }
 
 /*===== SCROLL UP =====*/
@@ -818,7 +828,7 @@ the website, in dark theme
   border-radius: 0.25rem;
   z-index: var(--z-tooltip);
   opacity: 0.8;
-  transition: 0.4s;
+  transition: 0.6s;
 }
 
 .scrollup__icon {
@@ -874,6 +884,13 @@ the website, in dark theme
     grid-template-columns: 0.6fr;
     justify-content: center;
   }
+  .footer__logo-img1 {
+    display: none;
+  }
+
+  .footer__logo-img2 {
+    display: block;
+  }
 }
 
 /* For medium devices */
@@ -918,9 +935,9 @@ the website, in dark theme
     margin-left: auto;
   }
 
+  /* .faqs__container, */
   .home__container,
   .about__container,
-  .faqs__container,
   .contact__container,
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
@@ -942,6 +959,8 @@ the website, in dark theme
 
   .faqs__container {
     align-items: flex-start;
+
+    width: auto;
   }
 
   .footer__container {

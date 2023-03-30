@@ -22,6 +22,8 @@ Compatible with all mobile devices and with a beautiful and pleasant user interf
 
 3/29/23
 
+- Replace footer plate logo on small devices
+
 - Integrate Media queries for small, medium, and large screens
 
 3/28/23
