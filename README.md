@@ -20,7 +20,13 @@ Compatible with all mobile devices and with a beautiful and pleasant user interf
 
 ## Commit Log
 
+3/30/23
+
+- Adjust HERO container breakpoints for each
+
 3/29/23
+
+- BRANCH home/hero: C&S Hero section
 
 - Replace footer plate logo on small devices
 
@@ -65,3 +71,5 @@ Compatible with all mobile devices and with a beautiful and pleasant user interf
 - Add link for "learn more" @line 135
 
 - Fix header margin-bottom
+
+- fix service circle

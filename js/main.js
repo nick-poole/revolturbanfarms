@@ -41,6 +41,7 @@ function scrollHeader() {
     header.classList.remove("scroll-header");
   }
 }
+
 window.addEventListener("scroll", scrollHeader);
 
 /*===== QUESTIONS ACCORDION =====*/
