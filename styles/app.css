@@ -319,7 +319,7 @@ the website, in dark theme
 
 .hero-2 {
   background-image: url("../images/colin-lloyd-EIN81690PWM-unsplash (2).jpg");
-  background-position: left;
+  background-position: 20%;
 }
 
 .hero-3 {
@@ -329,7 +329,7 @@ the website, in dark theme
 
 .hero-4 {
   background-image: url("../images/andra-c-taylor-jr-mM52YKqAER8-unsplash (1).jpg");
-  background-position: left;
+  background-position: right;
 }
 
 .hero-5 {
@@ -340,21 +340,23 @@ the website, in dark theme
 /* position: absolute; */
 .hero__container {
   padding: 50px;
-  width: 700px;
-
-  border: 3px dashed pink;
-}
-
-.hero-0 .hero__container {
-  /* position: static; */
 }
 
 .hero-2 .hero__container,
 .hero-3 .hero__container,
 .hero-5 .hero__container {
-  position: relative;
-  top: 550px;
-  text-align: right;
+  position: absolute;
+  right: 0px;
+}
+
+.hero-2 .hero__container,
+.hero-5 .hero__container {
+  bottom: 0;
+}
+
+.hero-3 .hero__container {
+  padding: 0;
+  bottom: 275px;
 }
 
 .hero__title {
@@ -967,8 +969,7 @@ the website, in dark theme
   }
 
   .hero__container {
-    margin: 0;
-    padding: 2rem 0 0 0;
+    padding: 2rem;
   }
 
   .home__img {
@@ -1004,10 +1005,6 @@ the website, in dark theme
   /* .steps__container {
     grid-template-columns: repeat(2, 1fr);
   } */
-
-  .hero__container {
-    padding: 50px;
-  }
 
   .services__description {
     padding: 0 4rem;
@@ -1185,8 +1182,6 @@ the website, in dark theme
 }
 
 @media screen and (min-width: 1200px) {
-  .hero {
-  }
   .home__social {
     right: -3rem;
     row-gap: 4.5rem;

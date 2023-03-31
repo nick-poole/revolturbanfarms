@@ -22,6 +22,8 @@ Compatible with all mobile devices and with a beautiful and pleasant user interf
 
 3/31/23
 
+- ADJUST: hero__container responsive positioning.
+
 - FIX: app.css HERO section background-image url path to navigate out to root dir
 
 3/30/23
