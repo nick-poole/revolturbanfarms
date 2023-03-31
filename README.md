@@ -20,6 +20,10 @@ Compatible with all mobile devices and with a beautiful and pleasant user interf
 
 ## Commit Log
 
+3/31/23
+
+- FIX: app.css HERO section background-image url path to navigate out to root dir
+
 3/30/23
 
 - ADD 5 additional HERO sections

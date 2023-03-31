@@ -4,7 +4,7 @@
 /*VARIABLES CSS */
 /*suggested 3.5rem*/
 :root {
-  --header-height: 2.5rem; /*56px*/
+  --header-height: 1rem; /*56px*/
 
   /*========== Colors ==========*/
   /*Color mode HEX*/
@@ -305,42 +305,48 @@ the website, in dark theme
   height: 100vh;
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
 .hero-0 {
-  background-image: url("/images/markus-spiske-vrbZVyX2k4I-unsplash (1).jpg");
+  margin-top: 50px;
+  background-image: url("../images/markus-spiske-vrbZVyX2k4I-unsplash (1).jpg");
 }
 .hero-1 {
-  background-image: url("/images/yianni-mathioudakis-XRwb892hC5U-unsplash (1).jpg");
+  background-image: url("../images/yianni-mathioudakis-XRwb892hC5U-unsplash (1).jpg");
   background-position: center;
 }
 
 .hero-2 {
-  background-image: url("/images/colin-lloyd-EIN81690PWM-unsplash (2).jpg");
+  background-image: url("../images/colin-lloyd-EIN81690PWM-unsplash (2).jpg");
   background-position: left;
 }
 
 .hero-3 {
-  background-image: url("/images/baron-cole-CAAxCRmqDVQ-unsplash.jpg");
+  background-image: url("../images/baron-cole-CAAxCRmqDVQ-unsplash.jpg");
   background-position: center;
 }
 
 .hero-4 {
-  background-image: url("/images/andra-c-taylor-jr-mM52YKqAER8-unsplash (1).jpg");
+  background-image: url("../images/andra-c-taylor-jr-mM52YKqAER8-unsplash (1).jpg");
   background-position: left;
 }
 
 .hero-5 {
-  background-image: url("/images/konexion-xNPPbsJmS2Q-unsplash (1).jpg");
+  background-image: url("../images/konexion-xNPPbsJmS2Q-unsplash (1).jpg");
   background-position: left;
 }
 
+/* position: absolute; */
 .hero__container {
   padding: 50px;
-  width: 700px:
+  width: 700px;
 
   border: 3px dashed pink;
-  z-index: 100;
+}
+
+.hero-0 .hero__container {
+  /* position: static; */
 }
 
 .hero-2 .hero__container,
@@ -354,8 +360,7 @@ the website, in dark theme
 .hero__title {
   color: var(--body-color);
   font-size: var(--big-font-size);
-  animation-duration: 0.9s;
-  animation: slide;
+  margin-bottom: 1rem;
 }
 .hero__subtitle {
   color: var(--first-color);
@@ -949,6 +954,9 @@ the website, in dark theme
 /*======== MEDIA QUERIES =========*/
 /* For small devices */
 @media screen and (max-width: 320px) {
+  html {
+    min-width: 320px;
+  }
   body {
     margin: 0;
   }
@@ -959,7 +967,7 @@ the website, in dark theme
   }
 
   .hero__container {
-    margin: 50px;
+    margin: 0;
     padding: 2rem 0 0 0;
   }
 
