@@ -20,9 +20,13 @@ Compatible with all mobile devices and with a beautiful and pleasant user interf
 
 ## Commit Log
 
+4/1/23 
+
+- Set reusable class for full-width images && adjust responsive styling on HOME/STEPS/FAQS section
+
 3/31/23
 
-- ADJUST: hero__container responsive positioning.
+- ADJUST: hero__container responsive positioning
 
 - FIX: app.css HERO section background-image url path to navigate out to root dir
 
@@ -83,3 +87,5 @@ Compatible with all mobile devices and with a beautiful and pleasant user interf
 - Fix header margin-bottom
 
 - fix service circle
+
+- remove grid class from hero sections
