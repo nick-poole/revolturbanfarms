@@ -20,7 +20,11 @@ Compatible with all mobile devices and with a beautiful and pleasant user interf
 
 ## Commit Log
 
-4/1/23 
+4/3/23
+
+- Adjust responsive styling for FOOTER section && change breakpoint to 1300px for large screens
+
+4/1/23
 
 - Set reusable class for full-width images && adjust responsive styling on HOME/STEPS/FAQS section
 
