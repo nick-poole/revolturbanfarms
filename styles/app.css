@@ -859,14 +859,22 @@ the website, in dark theme
   background-color: var(--first-color-alt);
 }
 .footer__container {
+  grid-template-areas:
+    "logo"
+    "info"
+    "sub"
+    "res";
   row-gap: 3rem;
+  grid-auto-columns: auto;
+}
+.footer__container {
 }
 
 .footer__logo-link {
   grid-area: logo;
   max-width: 500px;
 }
-.footer__logo-img1 {
+.footer__logo {
   height: 300px;
   width: 300px;
 }
@@ -892,7 +900,7 @@ the website, in dark theme
   background-color: var(--first-color-lighten);
   margin-top: var(--mb-1);
   padding: 0.75rem;
-  min-width: 500px;
+  min-width: 300px;
   max-width: 550px;
   display: flex;
   justify-content: space-between;
@@ -906,6 +914,9 @@ the website, in dark theme
   background: none;
   border: none;
   outline: none;
+}
+.footer__label {
+  displaty: none;
 }
 
 .footer__button {
@@ -1012,7 +1023,7 @@ the website, in dark theme
 
 /*======== MEDIA QUERIES =========*/
 /* For small devices */
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 575px) {
   html {
     min-width: 320px;
   }
@@ -1045,17 +1056,42 @@ the website, in dark theme
     grid-template-columns: 0.6fr;
     justify-content: center;
   }
+
+  .footer__container {
+    grid-template-areas:
+      "logo"
+      "info"
+      "sub"
+      "res";
+  }
+  .footer__subscribe-input {
+    min-width: 300px;
+  }
+  .footer__button {
+  }
+
   .footer__logo-img1 {
     display: none;
   }
 
   .footer__logo-img2 {
     display: block;
+    border-radius: 0.5rem;
+    background-color: var(--first-color-lighten);
+  }
+}
+
+@media screen and (width >= 360px) {
+  .footer__logo-img1 {
+    display: block;
+  }
+  .footer__logo-img2 {
+    display: none;
   }
 }
 
 /* For medium devices */
-@media screen and (min-width: 576px) and (max-width: 767px) {
+@media screen and (min-width: 576px) {
   /* .home__container {
   
   } */
@@ -1068,6 +1104,14 @@ the website, in dark theme
     grid-template-columns: repeat(2, 170px);
     justify-content: center;
     column-gap: 5rem;
+  }
+
+  .footer__container {
+    grid-template-areas:
+      "logo"
+      "info"
+      "sub"
+      "res";
   }
 
   .footer__subscribe {

@@ -20,6 +20,10 @@ Compatible with all mobile devices and with a beautiful and pleasant user interf
 
 ## Commit Log
 
+4/4/23
+
+- Adjust responsive subscribe input and logo under 360px screens
+
 4/3/23
 
 - Adjust responsive grid for HOME section on medium screens
@@ -82,16 +86,18 @@ Compatible with all mobile devices and with a beautiful and pleasant user interf
 
 ## Punch List
 
-- Consider alternate color pallete.
+~~- Consider alternate color pallete.~~
 
 - Revisit SERVICES section to finalize descriptions etc
 
-- Remove grid from FAQS, SERVICES, and FOOTER section & replace wwith flex-box 
+~~- Remove grid from FAQS, SERVICES, and FOOTER section & replace wwith flex-box ~~
 
-- Add link for "learn more" @line 135
+- ADD: link for "learn more" @line 135
 
-- Fix header margin-bottom
+- FIX: header margin-bottom
 
-- fix service circle
+- FIX: service circle
 
-- remove grid class from hero sections
+~~- remove grid class from hero sections~~
+
+- FIX: responsive FAQS side hero image
