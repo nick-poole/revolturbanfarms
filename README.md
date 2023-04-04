@@ -22,6 +22,8 @@ Compatible with all mobile devices and with a beautiful and pleasant user interf
 
 4/3/23
 
+- Adjust responsive grid for HOME section on medium screens
+
 - Adjust responsive styling for FOOTER section && change breakpoint to 1300px for large screens
 
 4/1/23

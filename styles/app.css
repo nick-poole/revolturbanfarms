@@ -379,21 +379,45 @@ the website, in dark theme
 
 /*===== HOME =====*/
 .home {
-  padding: 0.5rem 0 0rem;
+  padding: 0;
 }
 
 .home__container {
   position: relative;
   row-gap: 2rem;
+  grid-template-areas:
+    "data-1"
+    "img-1"
+    "data-2"
+    "img-2"
+    "data-3";
 }
 
 /* suggested width: 200px; */
 .home__img {
+  border-radius: 0.5rem;
+  box-shadow: 12px 12px 2px 1px var(--title-color);
   justify-self: center;
+}
+.img-1 {
+  grid-area: img-1;
+}
+.img-2 {
+  grid-area: img-2;
 }
 
 .home__data {
   margin: var(--mb-1-5);
+  grid-area: data;
+}
+.data-1 {
+  grid-area: data-1;
+}
+.data-2 {
+  grid-area: data-2;
+}
+.data-3 {
+  grid-area: data-3;
 }
 
 .home__title {
@@ -451,7 +475,7 @@ the website, in dark theme
 /*===== BUTTONS =====*/
 .button {
   display: inline-block;
-  background-color: var(--text-color);
+  background-color: var(--first-color);
   color: #fff;
   padding: 1rem 1.75rem;
   border-radius: 0.5rem;
@@ -460,7 +484,7 @@ the website, in dark theme
 }
 
 .button:hover {
-  background-color: var(--first-color);
+  background-color: var(--first-color-alt);
 }
 
 .button__icon {
@@ -1078,7 +1102,6 @@ the website, in dark theme
   }
 
   /* .faqs__container, */
-  .home__container,
   .about__container,
   .contact__container {
     grid-template-columns: repeat(2, 1fr);
@@ -1087,12 +1110,37 @@ the website, in dark theme
   .home {
     padding: 10rem 0 5rem;
   }
+
   .home__container {
-    align-items: center;
+    row-gap: 1rem;
+
+    grid-template-areas:
+      "data-1 img-1"
+      "img-2 data-2"
+      "data-3 data-3";
   }
+
   .home__img {
-    width: 280px;
-    order: 1;
+    width: 40vw;
+    max-width: 50vw;
+    margin: 0;
+  }
+
+  .img-1 {
+    align-self: center;
+    height: auto;
+  }
+
+  .img-2 {
+  }
+
+  .home__data {
+  }
+  .data-1 {
+  }
+  .data-2 {
+  }
+  .data-3 {
   }
   .home__social {
     top: 30%;
