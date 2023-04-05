@@ -20,6 +20,10 @@ Compatible with all mobile devices and with a beautiful and pleasant user interf
 
 ## Commit Log
 
+4/5/23
+
+- FEAT: Integrate contact form submission with Emailjs to contact@revolturbanfarms.org
+
 4/4/23
 
 - Adjust responsive subscribe input and logo under 360px screens
