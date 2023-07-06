@@ -1,550 +1,602 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revolt Urban Farms</title>
-    
-      <!--=============== FAVICON ===============-->
-      <link rel="apple-touch-icon" sizes="180x180" href="./icons/favicon_io/apple-touch-icon.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon_io/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon_io/favicon-16x16.png">
-      <link rel="manifest" href="/icons/favicon_io/site.webmanifest">
 
-      <!--=============== REMIX ICONS ===============-->
-      <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Revolt Urban Farms</title>
 
-      <!--=============== EMAILjs ===============-->
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-      
-      <script type="text/javascript"> (function() {emailjs.init('tF7NLbNRW1mMSXshB');})();</script>
+        <!--=============== FAVICON ===============-->
+        <link rel="apple-touch-icon" sizes="180x180" href="./icons/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="/icons/favicon_io/site.webmanifest">
 
-      <script type="text/javascript" src="./js/email.js"></script>
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
-    <!--=============== CSS STYLESHEET===============-->
-    <link rel="stylesheet" href="./styles/app.css">
-</head>
-<body>
-    <!--==================== HEADER ====================-->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#home" class="nav__logo">
-                <img class="nav__logo-img1" src="./logos/root-bar-logo-bg-removed.png" alt="" height="140px" width="150px">
-                <!-- <img class="nav__logo-img2" id="logo2" src="/logos/root-bar-logo.png" alt="" height="150px" width="150px"> -->
-            </a>
+        <!--=============== EMAILjs ===============-->
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link">Home</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">About</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#services" class="nav__link">Services</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#faqs" class="nav__link">FAQs</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">Contact</a>
-                    </li>
-                </ul>
+        <script> (function () { emailjs.init('tF7NLbNRW1mMSXshB'); })();</script>
+
+        <script src="js/email.js"></script>
+
+        <!--=============== CSS STYLESHEET===============-->
+        <link rel="stylesheet" href="styles/app.css">
+    </head>
+
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#home" class="nav__logo">
+                    <img class="nav__logo-img1" src="logos/root-bar-logo-bg-removed.png" alt="" height="140"
+                        width="150">
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#services" class="nav__link">Services</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#faqs" class="nav__link">FAQs</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
 
 
-                <div class="nav__close" id="nav-close">
-                    <i class="ri-close-circle-line"></i>
-                    <!-- <i class="ri-close-line"></i> -->
-                </div>
-            </div>
-
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="ri-menu-4-line nav-toggle-icon"></i>
-                <!-- <i class="ri-menu-line"></i> -->
-            </div>
-        </nav>
-    </header>
-
-    <main class="main">
-        <!--==================== HERO-0 ====================-->
-        <section class="hero hero-0">
-            <div class="hero__container grid">
-                <h1 class="hero__title">REVOLT URBAN FARMS</h1>
-                <h2 class="hero__subtitle">Feeding the Revolution</h2>
-            </div>
-        </section>
-
-        <!--==================== HOME ====================-->
-        <section class="home section container" id="home">
-            <div class="home__container container grid">
-                
-
-                <div class="home__data data-1">
-                    <h1 class="home__title">The time is now</h1>
-                    <p class="home__description">Our goal is to build a more sustainable and just food system for all. Community plays a crucial role in food security and urban agriculture. In urban areas, where access to fresh, healthy, and affordable food can be limited, community-based initiatives that focus on growing food locally and sustainably can help improve access to healthy food and reduce food insecurity. 
-                    </p>
-                    <a href="#about" class="button button--flex">
-                        Explore <i class="ri-arrow-right-down-line button__icon"></i>
-                    </a>
-                </div>
-
-                <img src="./images/clay-banks-MpVXotwNMXU-unsplash (2).jpg" alt="" class="home__img img-1 full-width">
-                <!-- <img src="./images/20210614_200137.jpg" alt="" class="home__img"> -->
-
-                <div class="home__social">
-                    <span class="home__social-follow">Follow Us</span>
-
-                    <div class="home__social-links">
-                        <a href="#" class="home__social-link">
-                            <i class="ri-facebook-box-line"></i>
-                        </a>
-                        <a href="https://www.instagram.com/revolturbanfarms/" class="home__social-link">
-                            <i class="ri-instagram-line"></i>
-                        </a>
-                        <a href="#" class="home__social-link">
-                            <i class="ri-twitter-line"></i>
-                        </a>
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-circle-line"></i>
+                        <!-- <i class="ri-close-line"></i> -->
                     </div>
                 </div>
 
-                <div class="home__data data-2">
-                    <h1 class="home__title">A sustainable future</h1>
-                    <p class="home__description">Our goal is to build a more sustainable and just food system for all. Community plays a crucial role in food security and urban agriculture. In urban areas, where access to fresh, healthy, and affordable food can be limited, community-based initiatives that focus on growing food locally and sustainably can help improve access to healthy food and reduce food insecurity. 
-                    </p>
-                    <a href="#about" class="button button--flex">
-                        Get Involved<i class="ri-arrow-right-down-line button__icon"></i>
-                    </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-4-line nav-toggle-icon"></i>
+                    <!-- <i class="ri-menu-line"></i> -->
                 </div>
+            </nav>
+        </header>
 
-                <img src="./images/pexels-tima-miroshnichenko-6508400.jpg" alt="" class="home__img img-2 full-width">
-                <!-- <img src="./images/pexels-tranise-foster-11806670.jpg" alt="" class="home__img img-2 img-2-alt full-width"> -->
-
-                <div class="home__data-3 data-3">
-                    <h1 class="home__title">Help us ignite change</h1>
-                    <p class="home__description">Our goal is to build a more sustainable and just food system for all. Community plays a crucial role in food security and urban agriculture. In urban areas, where access to fresh, healthy, and affordable food can be limited, community-based initiatives that focus on growing food locally and sustainably can help improve access to healthy food and reduce food insecurity.
-                    </p>
-                    <a href="#about" class="button button--flex">
-                        Join our Team!<i class="ri-arrow-right-down-line button__icon"></i>
-                    </a>
+        <main class="main">
+            <!--==================== HERO-0 ====================-->
+            <section class="hero hero-0">
+                <div class="hero__container grid">
+                    <h1 class="hero__title">REVOLT URBAN FARMS</h1>
+                    <h2 class="hero__subtitle">Feeding the Revolution</h2>
                 </div>
+            </section>
+
+            <!--==================== HOME ====================-->
+            <section class="home section container" id="home">
+                <div class="home__container container grid">
 
 
-            </div>
-        </section>
+                    <div class="home__data data-1">
+                        <h1 class="home__title">The time is now</h1>
+                        <p class="home__description">Our goal is to build a more sustainable and just food system for
+                            all. Community plays a crucial role in food security and urban agriculture. In urban areas,
+                            where access to fresh, healthy, and affordable food can be limited, community-based
+                            initiatives that focus on growing food locally and sustainably can help improve access to
+                            healthy food and reduce food insecurity.
+                        </p>
+                        <a href="#about" class="button button--flex">
+                            Explore <i class="ri-arrow-right-down-line button__icon"></i>
+                        </a>
+                    </div>
 
-        <!--==================== HERO-1 ====================-->
-        <section class="hero hero-1">
-            <div class="hero__container grid">
-                <h1 class="hero__title">REINVISION</h1>
-                <h2 class="hero__subtitle">Urban Agriculture</h2>
-            </div>
-        </section>
+                    <img src="images/clay-banks-MpVXotwNMXU-unsplash.jpg" alt="" class="home__img img-1 full-width">
+                    <!-- <img src="./images/20210614_200137.jpg" alt="" class="home__img"> -->
 
-        <!--==================== ABOUT ====================-->
-        <section class="about section container" id="about">
-            <div class="about__container grid">
-                <img src="./images/20200712_141050-01.jpeg" alt="" class="about__img grid">
-                <div class="about__data">
-                    <h2 class="section__title about__title">
-                        Who We Are <br> &amp What We Do
+                    <div class="home__social">
+                        <span class="home__social-follow">Follow Us</span>
+
+                        <div class="home__social-links">
+                            <a href="#" class="home__social-link">
+                                <i class="ri-facebook-box-line"></i>
+                            </a>
+                            <a href="https://www.instagram.com/revolturbanfarms/" class="home__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="#" class="home__social-link">
+                                <i class="ri-twitter-line"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="home__data data-2">
+                        <h1 class="home__title">A sustainable future</h1>
+                        <p class="home__description">Our goal is to build a more sustainable and just food system for
+                            all. Community plays a crucial role in food security and urban agriculture. In urban areas,
+                            where access to fresh, healthy, and affordable food can be limited, community-based
+                            initiatives that focus on growing food locally and sustainably can help improve access to
+                            healthy food and reduce food insecurity.
+                        </p>
+                        <a href="#about" class="button button--flex">
+                            Get Involved<i class="ri-arrow-right-down-line button__icon"></i>
+                        </a>
+                    </div>
+
+                    <img src="images/pexels-tima-miroshnichenko-6508400.jpg" alt="" class="home__img img-2 full-width">
+
+                    <div class="home__data-3 data-3">
+                        <h1 class="home__title">Help us ignite change</h1>
+                        <p class="home__description">Our goal is to build a more sustainable and just food system for
+                            all. Community plays a crucial role in food security and urban agriculture. In urban areas,
+                            where access to fresh, healthy, and affordable food can be limited, community-based
+                            initiatives that focus on growing food locally and sustainably can help improve access to
+                            healthy food and reduce food insecurity.
+                        </p>
+                        <a href="#about" class="button button--flex">
+                            Join our Team!<i class="ri-arrow-right-down-line button__icon"></i>
+                        </a>
+                    </div>
+
+
+                </div>
+            </section>
+
+            <!--==================== HERO-1 ====================-->
+            <section class="hero hero-1">
+                <div class="hero__container grid">
+                    <h1 class="hero__title">REINVISION</h1>
+                    <h2 class="hero__subtitle">Urban Agriculture</h2>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section container" id="about">
+                <div class="about__container grid">
+                    <img src="./images/20200712_141050-01.jpeg" alt="" class="about__img grid">
+                    <div class="about__data">
+                        <h2 class="section__title about__title">
+                            Who We Are <br> &amp; What We Do
+                        </h2>
+
+                        <p class="about__description">
+                            Revolt Urban Farms is a nonprofit organization that empowers urban residents to grow their
+                            own food and build a more sustainable community. Our mission is to encourage the
+                            optimization of lawn space in cities for growing food for consumption. Our goal is to reduce
+                            the carbon footprint of cities and to provide healthy, fresh food for those in need.
+                        </p>
+
+                        <p class="about__description">
+                            We offer research driven, solutions oriented approaches to sustainable and regenerative
+                            farming. Our experienced group of professionals and volunteers foster strong partnerships to
+                            maximize impact. Our programs place the needs of at-risk individuals at the forefront of our
+                            efforts, focusing on eradicating food deserts in urban areas and promoting access to
+                            healthy, fresh, and affordable food for all. Our programs include community gardens, urban
+                            farms, food cooperatives, and educational workshops, which are designed to empower local
+                            communities and create a more resilient and equitable food system.
+                        </p>
+
+                        <p class="about__description">
+                            In addition to our community-based initiatives, we are also committed to advocating for
+                            policy changes that promote sustainable and regenerative farming practices, reduce food
+                            waste, and support local food systems. We work closely with government agencies, schools,
+                            and other organizations to influence policies that create a more just and sustainable food
+                            system. Our advocacy efforts are informed by data and evidence-based research, and we engage
+                            community members in the policy-making process to ensure that their voices are heard. By
+                            combining community-based initiatives with policy advocacy, we aim to create lasting change
+                            and promote a more equitable and sustainable food system for all.
+                        </p>
+
+                        <div class="about__details">
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-line about__details-icon"></i>
+                                100% community based
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-line about__details-icon"></i>
+                                Solutions oriented
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-line about__details-icon"></i>
+                                Resource heavy for maximum impact.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-line about__details-icon"></i>
+                                Accessible resources for food education
+                            </p>
+                        </div>
+
+                        <a href="#" class="button--link button--flex">
+                            Learn More <i class="ri-arrow-right-down-line button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== HERO-2 ====================-->
+            <section class="hero hero-2">
+                <div class="hero__container grid">
+                    <h1 class="hero__title">REVOLT AGAINST</h1>
+                    <h2 class="hero__subtitle">Systemic Ineffeciences</h2>
+                </div>
+            </section>
+
+            <!--==================== STEPS ====================-->
+            <section class="steps section container">
+                <div class="steps__bg">
+                    <h2 class="section__title-center steps__title">
+                        Join the Urban Farming Revolution
                     </h2>
 
-                    <p class="about__description">
-                        Revolt Urban Farms is a nonprofit organization that empowers urban residents to grow their own food and build a more sustainable community. Our mission is to encourage the optimization of lawn space in cities for growing food for consumption. Our goal is to reduce the carbon footprint of cities and to provide healthy, fresh food for those in need.
-                    </p>
+                    <div class="steps__container grid">
+                        <div class="steps__card step-a">
+                            <div class="steps__card-number">01</div>
+                            <h3 class="steps__card-title">COMMUNITY</h3>
+                            <p class="steps__card-description">Our goal is to build a more sustainable and just food
+                                system for all. Community plays a crucial role in food security and urban agriculture.
+                                In urban areas, where access to fresh, healthy, and affordable food can be limited,
+                                community-based initiatives that focus on growing food locally and sustainably can help
+                                improve access to healthy food and reduce food insecurity.
+                            </p>
+                        </div>
 
-                    <p class="about__description">
-                        We offer research driven, solutions oriented approaches to sustainable and regenerative farming. Our experienced group of professionals and volunteers foster strong partnerships to maximize impact. Our programs place the needs of at-risk individuals at the forefront of our efforts, focusing on eradicating food deserts in urban areas and promoting access to healthy, fresh, and affordable food for all. Our programs include community gardens, urban farms, food cooperatives, and educational workshops, which are designed to empower local communities and create a more resilient and equitable food system.
-                    </p>
+                        <div class="steps__card step-b">
+                            <div class="steps__card-number ">02</div>
+                            <h3 class="steps__card-title">CULTIVATION</h3>
+                            <p class="steps__card-description">We are committed to exploring, studying, and implementing
+                                cutting edge urban agricultural strategies. We seek funding to invest in the research
+                                and development of new techniques that will enable us to empower city residents to
+                                plant, cultivate, and harvest their own food in backyards and community spaces.
+                            </p>
+                        </div>
 
-                    <p class="about__description">
-                        In addition to our community-based initiatives, we are also committed to advocating for policy changes that promote sustainable and regenerative farming practices, reduce food waste, and support local food systems. We work closely with government agencies, schools, and other organizations to influence policies that create a more just and sustainable food system. Our advocacy efforts are informed by data and evidence-based research, and we engage community members in the policy-making process to ensure that their voices are heard. By combining community-based initiatives with policy advocacy, we aim to create lasting change and promote a more equitable and sustainable food system for all.
-                    </p>
-
-                    <div class="about__details">
-                        <p class="about__details-description">
-                            <i class="ri-checkbox-line about__details-icon"></i>
-                            100% community based
-                        </p>
-                        <p class="about__details-description">
-                            <i class="ri-checkbox-line about__details-icon"></i>
-                            Solutions oriented 
-                        </p>
-                        <p class="about__details-description">
-                            <i class="ri-checkbox-line about__details-icon"></i>
-                            Resource heavy for maximum impact.
-                        </p>
-                        <p class="about__details-description">
-                            <i class="ri-checkbox-line about__details-icon"></i>
-                            Accessible resources for food education
-                        </p>
+                        <div class="steps__card step-c">
+                            <div class="steps__card-number">03</div>
+                            <h3 class="steps__card-title">COLLECTIVE</h3>
+                            <p class="steps__card-description">Urban agriculture collectives can provide an alternative
+                                model to conventional agriculture, which often relies on large-scale industrial farming
+                                and distribution systems. By working collaboratively, urban agriculture collectives can
+                                help create opportunities for economic development, increase access to healthy food, and
+                                promote environmental sustainability. They can also serve as a model for other urban
+                                agriculture projects and contribute to the development of more resilient and equitable
+                                food systems in urban areas.
+                            </p>
+                        </div>
                     </div>
-
-                    <a href="#" class="button--link button--flex">
-                        Learn More <i class="ri-arrow-right-down-line button__icon"></i>
-                    </a>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!--==================== HERO-2 ====================-->
-        <section class="hero hero-2">
-            <div class="hero__container grid">
-                <h1 class="hero__title">REVOLT AGAINST</h1>
-                <h2 class="hero__subtitle">Systemic Ineffeciences</h2>
-            </div>
-        </section>
+            <!--==================== HERO-3 ====================-->
+            <section class="hero hero-3">
+                <div class="hero__container grid">
+                    <h1 class="hero__title">RESOLVE</h1>
+                    <h2 class="hero__subtitle">Food Insecurity</h2>
+                </div>
+            </section>
 
-        <!--==================== STEPS ====================-->
-        <section class="steps section container" >
-            <div class="steps__bg">
-                <h2 class="section__title-center steps__title">
-                    Join the Urban Farming Revolution
+            <!--==================== SERVICES ====================-->
+            <section class="services section container" id="services">
+                <h2 class="section__title-center">
+                    What We Offer
                 </h2>
 
-                <div class="steps__container grid">
-                    <div class="steps__card step-a">
-                        <div class="steps__card-number">01</div>
-                        <h3 class="steps__card-title">COMMUNITY</h3>
-                           <p class="steps__card-description">Our goal is to build a more sustainable and just food system for all. Community plays a crucial role in food security and urban agriculture. In urban areas, where access to fresh, healthy, and affordable food can be limited, community-based initiatives that focus on growing food locally and sustainably can help improve access to healthy food and reduce food insecurity. 
-                           </p>
+                <p class="service__description">
+                    Lean more about our jumpstart services.
+                </p>
+
+                <div class="service__container grid">
+                    <article class="service__card">
+                        <div class="service__circle"></div>
+
+                        <img src="images/andres-siimon-QwkqiuQLqBc-unsplash.jpg" alt="" class="service__img">
+
+                        <h3 class="service__title">Greenspace Jumpstart</h3>
+                        <span class="service__price">Estimate</span>
+
+                        <button class="button--flex service__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="service__card">
+                        <div class="service__circle"></div>
+
+                        <img src="images/markus-spiske-pASHRAKiDeU-unsplash.jpg" alt="" class="service__img">
+
+                        <h3 class="service__title">Garden Consultation</h3>
+                        <span class="service__price">Free</span>
+
+                        <button class="button--flex service__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="service__card">
+                        <div class="service__circle"></div>
+
+                        <img src="images/nahil-naseer-xljtGZ2-P3Y-unsplash.jpg" alt="" class="service__img">
+
+                        <h3 class="service__title">Adopt-A-Lot</h3>
+                        <span class="service__price">Estimate</span>
+
+                        <button class="button--flex service__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+                </div>
+            </section>
+
+            <!--==================== HERO-4 ====================-->
+            <section class="hero hero-4">
+                <div class="hero__container grid">
+                    <h1 class="hero__title">RESTORE</h1>
+                    <h2 class="hero__subtitle">Our Communities</h2>
+                </div>
+            </section>
+
+            <!--==================== FAQS ====================-->
+            <section class="faqs section" id="faqs">
+
+
+                <div class="faqs__container container grid">
+                    <div class="faqs__group grid">
+
+                        <h2 class="section__title-center faqs__title container">
+                            Frequently Asked Questions
+                        </h2>
+                        <div class="faqs__item">
+                            <header class="faqs__header">
+                                <i class="ri-add-circle-line faqs__icon"></i>
+                                <h3 class="faqs__item-title">What is a green-space jump-start service?</h3>
+                            </header>
+                            <div class="faqs__content">
+                                <p class="faqs__description">
+                                    Our green-space jump-start service is a comprehensive gardening service that
+                                    transforms your yard space into a flourishing garden greenspace. We provide all the
+                                    necessary resources and support to help you create and maintain a productive and
+                                    sustainable garden.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faqs__item">
+                            <header class="faqs__header">
+                                <i class="ri-add-circle-line faqs__icon"></i>
+                                <h3 class="faqs__item-title">Do I need any prior gardening experience to use this
+                                    service?</h3>
+                            </header>
+                            <div class="faqs__content">
+                                <p class="faqs__description">
+                                    No, you don't need any prior gardening experience. Our team of professionals will
+                                    work with you to assess your space, create a customized design, and provide ongoing
+                                    support and maintenance to ensure that your garden thrives.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faqs__item">
+                            <header class="faqs__header">
+                                <i class="ri-add-circle-line faqs__icon"></i>
+                                <h3 class="faqs__item-title">What types of vegetables and fruits can I grow in my
+                                    garden?</h3>
+                            </header>
+                            <div class="faqs__content">
+                                <p class="faqs__description">
+                                    The types of vegetables and fruits you can grow in your garden depend on a variety
+                                    of factors, including the climate, soil type, and sun exposure. Our team will work
+                                    with you to select plants that are well-suited to your specific space and
+                                    preferences.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faqs__item">
+                            <header class="faqs__header">
+                                <i class="ri-add-circle-line faqs__icon"></i>
+                                <h3 class="faqs__item-title">How much does the service cost?</h3>
+                            </header>
+                            <div class="faqs__content">
+                                <p class="faqs__description">
+                                    The cost of our green-space jump-start service depends on the size and complexity of
+                                    your space, as well as the types of plants you want to grow. We'll provide a
+                                    customized quote based on your specific needs and preferences.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faqs__item">
+                            <header class="faqs__header">
+                                <i class="ri-add-circle-line faqs__icon"></i>
+                                <h3 class="faqs__item-title">How long does it take to create a garden space?</h3>
+                            </header>
+                            <div class="faqs__content">
+                                <p class="faqs__description">
+                                    The time it takes to create a garden space depends on the size and complexity of
+                                    your space, as well as the types of plants you want to grow. We'll work with you to
+                                    create a timeline and schedule that meets your needs and preferences.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faqs__item">
+                            <header class="faqs__header">
+                                <i class="ri-add-circle-line faqs__icon"></i>
+                                <h3 class="faqs__item-title">What kind of ongoing support do you provide?</h3>
+                            </header>
+                            <div class="faqs__content">
+                                <p class="faqs__description">
+                                    We provide ongoing maintenance and support to ensure that your garden continues to
+                                    thrive throughout the growing season. Our team will help you with watering,
+                                    fertilizing, pruning, and other tasks as needed to keep your garden healthy and
+                                    productive.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./images/nahil-naseer-xljtGZ2-P3Y-unsplash.jpg" alt="" class="faqs__img">
+                </div>
+            </section>
+
+            <!--==================== HERO-5 ====================-->
+            <section class="hero hero-5">
+                <div class="hero__container grid">
+                    <h1 class="hero__title">REVOLT URBAN FARMS</h1>
+                    <h2 class="hero__subtitle">Power to the plant people</h2>
+                </div>
+            </section>
+
+            <!--==================== CONTACT ====================-->
+            <section class="contact section container">
+                <div class="contact__container grid">
+                    <div class="contact__box">
+                        <h2 class="section__title">
+                            Contact
+                        </h2>
+
+                        <p class="contact__paragraph">
+                            We'd love to hear from you! Your support and assistance is greatly appreciated. If you have
+                            any questions or would like to learn more about our organization, please fill out the form
+                            below and we will get back to you as soon as possible.
+                        </p>
+
+                        <div class="contact__data">
+                            <div class="contact__info">
+                                <h3 class="contact__subtitle">Give us a call.</h3>
+                                <span class="contact__description">
+                                    <i class="ri-phone-line contact__icon"></i>
+                                    <a class="contact__tel" href="tel:+14108675309">(410) 867-5309</a>
+                                </span>
+                            </div>
+
+                            <div class="contact__info">
+                                <h3 class="contact__subtitle">Email us!</h3>
+                                <span class="contact__description">
+                                    <i class="ri-mail-send-line contact__icon"></i>
+                                    <a href="mailto:contact@revolturbanfarms.org"
+                                        class="contact__email">contact@revolturbanfarms.org</a>
+                                </span>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="steps__card step-b">
-                        <div class="steps__card-number ">02</div>
-                        <h3 class="steps__card-title">CULTIVATION</h3>
-                           <p class="steps__card-description">We are committed to exploring, studying, and implementing cutting edge urban agricultural strategies. We seek funding to invest in the research and development of new techniques that will enable us to empower city residents to plant, cultivate, and harvest their own food in backyards and community spaces. 
-                           </p>
-                    </div>
+                    <form action="submit" class="contact__form" id="contact">
+                        <div class="contact__inputs">
+                            <div class="contact__content">
+                                <input type="text" placeholder=" " class="contact__input" name="user_name">
+                                <label for="name" class="contact__label name">Name</label>
+                            </div>
 
-                    <div class="steps__card step-c">
-                        <div class="steps__card-number">03</div>
-                        <h3 class="steps__card-title">COLLECTIVE</h3>
-                           <p class="steps__card-description">Urban agriculture collectives can provide an alternative model to conventional agriculture, which often relies on large-scale industrial farming and distribution systems. By working collaboratively, urban agriculture collectives can help create opportunities for economic development, increase access to healthy food, and promote environmental sustainability. They can also serve as a model for other urban agriculture projects and contribute to the development of more resilient and equitable food systems in urban areas.
-                           </p>
+                            <div class="contact__content">
+                                <label for="email" class="contact__label email">Email</label>
+                                <input type="email" placeholder=" " class="contact__input" name="user_email">
+                            </div>
+
+                            <div class="contact__content">
+                                <label for="subject" class="contact__label subject">Subject</label>
+                                <input type="text" placeholder=" " class="contact__input" name="subject">
+                            </div>
+
+                            <div class="contact__content contact__area">
+                                <label for="message" class="contact__label message">Message</label>
+                                <textarea placeholder=" " class="contact__input" name="message"></textarea>
+
+                            </div>
+                        </div>
+
+                        <button class="button button--flex cta__submit-btn" type="submit" value="send">
+                            Submit<i class="ri-mail-send-line button__icon"></i>
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <a href="#home" class="footer__logo-link">
+                    <img src="logos/Plate-logo.png" alt="" class="footer__logo footer__logo-img1">
+                    <img src="logos/revolt-txt-logo-bg-removed.png" alt="" class="footer__logo-img2">
+                </a>
+
+                <div class="footer__content">
+                    <ul class="footer__data">
+                        <li class="footer__info">1020 Druid Hill Ave</li>
+                        <li class="footer__info">Baltimore, MD 21201</li>
+                        <li class="footer__info">
+                            <a class="contact__tel" href="tel:+14108675309">(410) 867-5309</a>
+                        </li>
+                        <li class="footer__info">
+                            <a href="mailto:contact@revolturbanfarms.org"
+                                class="contact__email">contact@revolturbanfarms.org</a>
+                        </li>
+                        <li class="footer__info footer__social">
+                            <a href="https://www.facebook.com/" class="footer__social-link">
+                                <i class="ri-facebook-box-fill"></i>
+                            </a>
+                            <a href="https://www.twitter.com/" class="footer__social-link">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/revolturbanfarms/" class="footer__social-link">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__subscribe">
+                    <h3 class="footer__title"> Subscribe to our newsletter!</h3>
+                    <div class="footer__subscribe-input">
+
+                        <input type="email" placeholder="email" class="footer__input">
+
+                        <button class="button button--flex footer__button">
+                            Subscribe<i class="ri-mail-check-line button__icon"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="footer__resources ">
+                    <h3 class="footer__title resource-title">Resources</h3>
+
+                    <div class="footer__resource-links">
+                        <a href="https://dhcd.baltimorecity.gov/nd/adopt-lot-program" class="footer__resource-link">
+                            <img src="logos/TreeBaltimore-Vert-Logo-CMYK.webp" alt="">
+                        </a>
+
+                        <a href="https://dhcd.baltimorecity.gov/nd/adopt-lot-program" class="footer__resource-link">
+                            <img src="logos/citylogo2010.webp" alt="">
+                        </a>
+
+                        <a href="https://bcrp.baltimorecity.gov/" class="footer__resource-link">
+                            <img src="logos/38eda.png" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!--==================== HERO-3 ====================-->
-        <section class="hero hero-3">
-            <div class="hero__container grid">
-                <h1 class="hero__title">RESOLVE</h1>
-                <h2 class="hero__subtitle">Food Insecurity</h2>
-            </div>
-        </section>
-
-        <!--==================== SERVICES ====================-->
-        <section class="services section container" id="services">
-            <h2 class="section__title-center">
-                What We Offer
-            </h2>
-
-            <p class="service__description">
-                Lean more about our jumpstart services.
+            <p class="footer__copy">
+                &#169; Revolt Urban Farms 2023 All Rights Reserved
             </p>
+        </footer>
 
-            <div class="service__container grid">
-                <article class="service__card">
-                    <div class="service__circle"></div>
+        <!--=============== SCROLL UP ===============-->
+        <a href="#home" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-circle-line scrollup__icon"></i>
+        </a>
 
-                    <img src="./images/andres-siimon-QwkqiuQLqBc-unsplash.jpg" alt="" class="service__img">
+        <!--=============== SCROLL REVEAL ===============-->
+        <!-- <script src="#"></script> -->
 
-                    <h3 class="service__title">Greenspace Jumpstart</h3>
-                    <span class="service__price">Estimate</span>
+        <!--=============== MAIN.js ===============-->
+        <script src="js/main.js"></script>
 
-                    <button class="button--flex service__button">
-                        <i class="ri-shopping-bag-line"></i>
-                    </button>
-                </article>
+        <!--=============== EMAIL.js ===============-->
+        <!-- <script src="./js/email.js"></script> -->
+    </body>
 
-                <article class="service__card">
-                    <div class="service__circle"></div>
-
-                    <img src="./images/markus-spiske-pASHRAKiDeU-unsplash (1).jpg" alt="" class="service__img">
-
-                    <h3 class="service__title">Garden Consultation</h3>
-                    <span class="service__price">Free</span>
-
-                    <button class="button--flex service__button">
-                        <i class="ri-shopping-bag-line"></i>
-                    </button>
-                </article>
-
-                <article class="service__card">
-                    <div class="service__circle"></div>
-
-                    <img src="./images/nahil-naseer-xljtGZ2-P3Y-unsplash (3).jpg" alt="" class="service__img">
-
-                    <h3 class="service__title">Adopt-A-Lot</h3>
-                    <span class="service__price">Estimate</span>
-
-                    <button class="button--flex service__button">
-                        <i class="ri-shopping-bag-line"></i>
-                    </button>
-                </article>
-            </div>
-        </section>
-
-        <!--==================== HERO-4 ====================-->
-        <section class="hero hero-4">
-            <div class="hero__container grid">
-                <h1 class="hero__title">RESTORE</h1>
-                <h2 class="hero__subtitle">Our Communities</h2>
-            </div>
-        </section>
-
-        <!--==================== FAQS ====================-->
-        <section class="faqs section" id="faqs">
-            
-
-            <div class="faqs__container container grid">
-                <div class="faqs__group grid">
-
-                    <h2 class="section__title-center faqs__title container">
-                        Frequently Asked Questions
-                    </h2>
-                    <div class="faqs__item">
-                        <header class="faqs__header">
-                            <i class="ri-add-circle-line faqs__icon"></i>
-                            <h3 class="faqs__item-title">What is a green-space jump-start service?</h3>
-                        </header>
-                        <div class="faqs__content">
-                            <p class="faqs__description">
-                            Our green-space jump-start service is a comprehensive gardening service that transforms your yard space into a flourishing garden greenspace. We provide all the necessary resources and support to help you create and maintain a productive and sustainable garden.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="faqs__item">
-                        <header class="faqs__header">
-                            <i class="ri-add-circle-line faqs__icon"></i>
-                            <h3 class="faqs__item-title">Do I need any prior gardening experience to use this service?</h3>
-                        </header>
-                        <div class="faqs__content">
-                            <p class="faqs__description">
-                            No, you don't need any prior gardening experience. Our team of professionals will work with you to assess your space, create a customized design, and provide ongoing support and maintenance to ensure that your garden thrives.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="faqs__item">
-                        <header class="faqs__header">
-                            <i class="ri-add-circle-line faqs__icon"></i>
-                            <h3 class="faqs__item-title">What types of vegetables and fruits can I grow in my garden?</h3>
-                        </header>
-                        <div class="faqs__content">
-                            <p class="faqs__description">
-                            The types of vegetables and fruits you can grow in your garden depend on a variety of factors, including the climate, soil type, and sun exposure. Our team will work with you to select plants that are well-suited to your specific space and preferences.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="faqs__item">
-                        <header class="faqs__header">
-                            <i class="ri-add-circle-line faqs__icon"></i>
-                            <h3 class="faqs__item-title">How much does the service cost?</h3>
-                        </header>
-                        <div class="faqs__content">
-                            <p class="faqs__description">
-                            The cost of our green-space jump-start service depends on the size and complexity of your space, as well as the types of plants you want to grow. We'll provide a customized quote based on your specific needs and preferences.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="faqs__item">
-                        <header class="faqs__header">
-                            <i class="ri-add-circle-line faqs__icon"></i>
-                            <h3 class="faqs__item-title">How long does it take to create a garden space?</h3>
-                        </header>
-                        <div class="faqs__content">
-                            <p class="faqs__description">
-                            The time it takes to create a garden space depends on the size and complexity of your space, as well as the types of plants you want to grow. We'll work with you to create a timeline and schedule that meets your needs and preferences.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="faqs__item">
-                        <header class="faqs__header">
-                            <i class="ri-add-circle-line faqs__icon"></i>
-                            <h3 class="faqs__item-title">What kind of ongoing support do you provide?</h3>
-                        </header>
-                        <div class="faqs__content">
-                            <p class="faqs__description">
-                            We provide ongoing maintenance and support to ensure that your garden continues to thrive throughout the growing season. Our team will help you with watering, fertilizing, pruning, and other tasks as needed to keep your garden healthy and productive.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <img src="./images/nahil-naseer-xljtGZ2-P3Y-unsplash.jpg" alt="" class="faqs__img">
-            </div>
-        </section>
-
-        <!--==================== HERO-5 ====================-->
-        <section class="hero hero-5">
-            <div class="hero__container grid">
-                <h1 class="hero__title">REVOLT URBAN FARMS</h1>
-                <h2 class="hero__subtitle">Power to the plant people</h2>
-            </div>
-        </section>
-
-        <!--==================== CONTACT ====================-->
-        <section class="contact section container"> 
-            <div class="contact__container grid">
-                <div class="contact__box">
-                    <h2 class="section__title">
-                        Contact
-                    </h2>
-
-                    <p class="contact__paragraph">
-                        We'd love to hear from you! Your support and assistance is greatly appreciated. If you have any questions or would like to learn more about our organization, please fill out the form below and we will get back to you as soon as possible.
-                    </p>
-
-                    <div class="contact__data">
-                        <div class="contact__info">
-                            <h3 class="contact__subtitle">Give us a call.</h3>
-                            <span class="contact__description">
-                                <i class="ri-phone-fill contact__icon"></i>
-                                <i class="ri-phone-line contact__icon"></i>
-                                 <a class="contact__tel" href="tel:+14108675309">(410) 867-5309</a>    
-                            </span>
-                        </div>
-
-                        <div class="contact__info">
-                            <h3 class="contact__subtitle">Email us!</h3>
-                            <span class="contact__description">
-                                <i class="ri-mail-send-fill contact__icon"></i>
-                                <i class="ri-mail-send-line contact__icon"></i>
-                                <a href="mailto: contact@revolturbanfarms.org" class="contact__email">contact@revolturbanfarms.org</a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <form action="submit" class="contact__form" id="contact">
-                    <div class="contact__inputs">
-                        <div class="contact__content">
-                            <input type="hidden" class="contact_number" name="contact_number">
-                            <input type="text" placeholder=" " class="contact__input" name="user_name">
-                            <label for="name" class="contact__label name">Name</label>
-                        </div>
-
-                        <div class="contact__content">
-                            <input type="email" placeholder=" " class="contact__input" name="user_email">
-                            <label for="email" class="contact__label email">Email</label>
-                        </div>
-
-                        <div class="contact__content">
-                            <input type="text" placeholder=" " class="contact__input" name="subject">
-                            <label for="subject" class="contact__label subject">Subject</label>
-                        </div>
-
-                        <div class="contact__content contact__area">
-                            <textarea  placeholder=" " class="contact__input" name="message"></textarea>
-                            <label for="message" class="contact__label message">Message</label>
-                        </div>   
-                    </div>
-
-                    <button class="button button--flex cta__submit-btn" type="submit" value="send">
-                        Submit<i class="ri-mail-send-line button__icon"></i>
-                    </button>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <!--==================== FOOTER ====================-->
-    <footer class="footer section">
-        <div class="footer__container container grid">
-            <a href="#home" class="footer__logo-link">
-                <img src="./logos/Plate logo.png" alt="" class="fotter__logo footer__logo-img1">
-                <img src="./logos/revolt-txt-logo-bg-removed.png" alt="" class="footer__logo-img2">
-            </a>
-        
-            <div class="footer__content">
-                <ul class="footer__data">
-                    <li class="footer__info">1020 Druid Hill Ave</li>
-                    <li class="footer__info">Baltimore, MD 21201</li>
-                    <li class="footer__info">
-                        <a class="contact__tel" href="tel:+14108675309">(410) 867-5309</a>
-                    </li>
-                    <li class="footer__info">
-                        <a href="mailto: contact@revolturbanfarms.org" class="contact__email">contact@revolturbanfarms.org</a>
-                    </li>
-
-                    <div class="footer__social">
-                        <a href="https://www.facebook.com/" class="footer__social-link">
-                            <i class="ri-facebook-box-fill"></i>
-                        </a>
-
-                        <a href="https://www.twitter.com/" class="footer__social-link">
-                            <i class="ri-twitter-fill"></i>
-                        </a>
-
-                        <a href="https://www.instagram.com/revolturbanfarms/" class="footer__social-link">
-                            <i class="ri-instagram-fill"></i>
-                        </a>
-                    </div>
-                </ul>
-            </div>
-
-            <div class="footer__subscribe">
-                <h3 class="footer__title"> Subscribe to our newsletter!</h3>
-                <div class="footer__subscribe-input">
-                    
-                    <input type="email" placeholder="email" class="footer__input" width="20px" >
-                    
-
-                    
-                    <button class="button button--flex footer__button">
-                        Subscribe<i class="ri-mail-check-line button__icon"></i>
-                    </button>
-                </div>
-            </div>
-
-            <div class="footer__resources ">
-                <h3 class="footer__title resource-title">Resources</h3>
-
-                <div class="footer__resource-links">
-                    <a href="https://dhcd.baltimorecity.gov/nd/adopt-lot-program" class="footer__resource-link">
-                        <img src="./logos/TreeBaltimore-Vert-Logo-CMYK.webp" alt="">
-                    </a>
-                    
-                    <a href="https://dhcd.baltimorecity.gov/nd/adopt-lot-program" class="footer__resource-link">
-                        <img src="./logos/citylogo2010.webp" alt="">
-                    </a>
-                    
-                    <a href="https://bcrp.baltimorecity.gov/" class="footer__resource-link">
-                        <img src="./logos/38eda.png" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <p class="footer__copy">
-            &#169; Revolt Urban Farms  2023 All Rights Reserved
-        </p>
-    </footer>
-
-      <!--=============== SCROLL UP ===============-->
-      <a href="#home" class="scrollup" id="scroll-up"> 
-        <i class="ri-arrow-up-circle-line scrollup__icon"></i>
-      </a>
-
-    <!--=============== SCROLL REVEAL ===============-->
-    <script src="#"></script>
-    
-    <!--=============== MAIN.js ===============-->
-    <script src="./js/main.js"></script>
-
-    <!--=============== EMAIL.js ===============-->
-    <!-- <script src="./js/email.js"></script> -->
-
-    
-
-
-    
-</body>
 </html>
