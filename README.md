@@ -82,6 +82,10 @@ The website also includes a contact form that utilizes EmailJs to send user mess
 
 ## Commit Log
 
+9/5/23
+
+- FIX(a11y): Resolve heading contrast issues by applying overlays.
+
 9/4/23
 
 - FIX(a11y): Improve site accessibility by adding ARIA labels, alt tags and resolving orphaned labels and contrast issues.
