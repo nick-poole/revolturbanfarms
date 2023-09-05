@@ -38,7 +38,7 @@
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
-                <a href="#home" class="nav__logo">
+                <a href="#home" class="nav__logo" aria-label="Revolt Urban Farms Home Page">
                     <img class="nav__logo-img1" src="logos/root-bar-logo-bg-removed.png" alt="" height="140"
                         width="150">
                 </a>
@@ -108,15 +108,18 @@
                         <span class="home__social-follow">Follow Us</span>
 
                         <div class="home__social-links">
-                            <a href="#" class="home__social-link">
-                                <i class="ri-facebook-box-line"></i>
-                            </a>
-                            <a href="https://www.instagram.com/revolturbanfarms/" class="home__social-link">
+                            <a href="https://www.instagram.com/revolturbanfarms/" class="home__social-link"
+                                aria-label="Visit Revolt Urban Farms on Instagram">
                                 <i class="ri-instagram-line"></i>
                             </a>
-                            <a href="#" class="home__social-link">
+                            <!-- <a href="https://www.facebook.com/" class="home__social-link"
+                                aria-label="Check out our Facebook page">
+                                <i class="ri-facebook-box-line"></i>
+                            </a> -->
+                            <!-- <a href="https://twitter.com/" class="home__social-link"
+                                aria-label="Follow Us on Twitter">>
                                 <i class="ri-twitter-line"></i>
-                            </a>
+                            </a> -->
                         </div>
                     </div>
 
@@ -155,8 +158,10 @@
             <!--==================== HERO-1 ====================-->
             <section class="hero hero-1">
                 <div class="hero__container grid">
-                    <h1 class="hero__title">REINVISION</h1>
-                    <h2 class="hero__subtitle">Urban Agriculture</h2>
+                    <div class="hero__overlay">
+                        <h1 class="hero__title">REINVISION</h1>
+                        <h2 class="hero__subtitle">Urban Agriculture</h2>
+                    </div>
                 </div>
             </section>
 
@@ -303,9 +308,9 @@
                         <h3 class="service__title">Greenspace Jumpstart</h3>
                         <span class="service__price">Estimate</span>
 
-                        <button class="button--flex service__button">
+                        <!-- <button class="button--flex service__button">
                             <i class="ri-shopping-bag-line"></i>
-                        </button>
+                        </button> -->
                     </article>
 
                     <article class="service__card">
@@ -316,9 +321,9 @@
                         <h3 class="service__title">Garden Consultation</h3>
                         <span class="service__price">Free</span>
 
-                        <button class="button--flex service__button">
+                        <!-- <button class="button--flex service__button">
                             <i class="ri-shopping-bag-line"></i>
-                        </button>
+                        </button> -->
                     </article>
 
                     <article class="service__card">
@@ -329,9 +334,9 @@
                         <h3 class="service__title">Adopt-A-Lot</h3>
                         <span class="service__price">Estimate</span>
 
-                        <button class="button--flex service__button">
+                        <!-- <button class="button--flex service__button">
                             <i class="ri-shopping-bag-line"></i>
-                        </button>
+                        </button> -->
                     </article>
                 </div>
             </section>
@@ -492,23 +497,25 @@
                     <form action="submit" class="contact__form" id="contact">
                         <div class="contact__inputs">
                             <div class="contact__content">
-                                <input type="text" placeholder=" " class="contact__input" name="user_name">
-                                <label for="name" class="contact__label name">Name</label>
+                                <label for="user-name" class="contact__label name">Name</label>
+                                <input type="text" placeholder=" " class="contact__input" name="user_name"
+                                    id="user-name">
                             </div>
 
                             <div class="contact__content">
-                                <label for="email" class="contact__label email">Email</label>
-                                <input type="email" placeholder=" " class="contact__input" name="user_email">
+                                <label for="user-email" class="contact__label email">Email</label>
+                                <input type="email" placeholder=" " class="contact__input" name="user_email"
+                                    id="user-email">
                             </div>
 
                             <div class="contact__content">
                                 <label for="subject" class="contact__label subject">Subject</label>
-                                <input type="text" placeholder=" " class="contact__input" name="subject">
+                                <input type="text" placeholder=" " class="contact__input" name="subject" id="subject">
                             </div>
 
                             <div class="contact__content contact__area">
                                 <label for="message" class="contact__label message">Message</label>
-                                <textarea placeholder=" " class="contact__input" name="message"></textarea>
+                                <textarea placeholder=" " class="contact__input" name="message" id="message"></textarea>
 
                             </div>
                         </div>
@@ -525,8 +532,10 @@
         <footer class="footer section">
             <div class="footer__container container grid">
                 <a href="#home" class="footer__logo-link">
-                    <img src="logos/Plate-logo.png" alt="" class="footer__logo footer__logo-img1">
-                    <img src="logos/revolt-txt-logo-bg-removed.png" alt="" class="footer__logo-img2">
+                    <img src="logos/Plate-logo.png" alt="Revolt Urban Farms logo"
+                        class="footer__logo footer__logo-img1">
+                    <img src="logos/revolt-txt-logo-bg-removed.png" alt="Revolt Urban Farms logo"
+                        class="footer__logo-img2">
                 </a>
 
                 <div class="footer__content">
@@ -534,33 +543,38 @@
                         <li class="footer__info">1020 Druid Hill Ave</li>
                         <li class="footer__info">Baltimore, MD 21201</li>
                         <li class="footer__info">
-                            <a class="contact__tel" href="tel:+14108675309">(410) 867-5309</a>
+                            <a class="contact__tel ftr" href="tel:+14108675309">(410) 867-5309</a>
                         </li>
                         <li class="footer__info">
                             <a href="mailto:contact@revolturbanfarms.org"
-                                class="contact__email">contact@revolturbanfarms.org</a>
+                                class="contact__email ftr">contact@revolturbanfarms.org</a>
                         </li>
                         <li class="footer__info footer__social">
-                            <a href="https://www.facebook.com/" class="footer__social-link">
+                            <a href="https://www.instagram.com/revolturbanfarms/" class="footer__social-link"
+                                aria-label="Visit Revolt Urban Farms on Instagram">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                            <a href="https://www.facebook.com/" class="footer__social-link"
+                                aria-label="Check out our Facebook page">
                                 <i class="ri-facebook-box-fill"></i>
                             </a>
-                            <a href="https://www.twitter.com/" class="footer__social-link">
+                            <a href="https://www.twitter.com/" class="footer__social-link"
+                                aria-label="Follow Us on Twitter">
                                 <i class="ri-twitter-fill"></i>
-                            </a>
-                            <a href="https://www.instagram.com/revolturbanfarms/" class="footer__social-link">
-                                <i class="ri-instagram-fill"></i>
                             </a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="footer__subscribe">
-                    <h3 class="footer__title"> Subscribe to our newsletter!</h3>
+                    <h3 class="footer__title">Subscribe to our newsletter!</h3>
                     <div class="footer__subscribe-input">
 
-                        <input type="email" placeholder="email" class="footer__input">
+                        <label for="newsletter-form"
+                            aria-label="Email signup for newsletter currently unavailible"></label>
+                        <input type="email" placeholder="Coming Soon!" class="footer__input" id="newsletter-form">
 
-                        <button class="button button--flex footer__button">
+                        <button class="button button--flex footer__button" disabled>
                             Subscribe<i class="ri-mail-check-line button__icon"></i>
                         </button>
                     </div>
@@ -570,16 +584,19 @@
                     <h3 class="footer__title resource-title">Resources</h3>
 
                     <div class="footer__resource-links">
-                        <a href="https://dhcd.baltimorecity.gov/nd/adopt-lot-program" class="footer__resource-link">
+                        <a href="https://www.treebaltimore.org/" class="footer__resource-link"
+                            aria-label="Visit Tree Baltimore dot org">
                             <img src="logos/TreeBaltimore-Vert-Logo-CMYK.webp" alt="">
                         </a>
 
-                        <a href="https://dhcd.baltimorecity.gov/nd/adopt-lot-program" class="footer__resource-link">
-                            <img src="logos/citylogo2010.webp" alt="">
+                        <a href="https://dhcd.baltimorecity.gov/nd/adopt-lot-program" class="footer__resource-link"
+                            aria-label="Learn more about Baltimore City's Adopt-A-Lot program here">
+                            <img src="logos/citylogo2010.webp" alt="Baltimore City Government Logo">
                         </a>
 
-                        <a href="https://bcrp.baltimorecity.gov/" class="footer__resource-link">
-                            <img src="logos/38eda.png" alt="">
+                        <a href="https://bcrp.baltimorecity.gov/" class="footer__resource-link"
+                            aria-label="Visit Baltimore City Recreation and Parks Website">
+                            <img src="logos/38eda.png" alt="Baltimore City Recreation and Parks">
                         </a>
                     </div>
                 </div>
@@ -590,7 +607,7 @@
         </footer>
 
         <!--=============== SCROLL UP ===============-->
-        <a href="#home" class="scrollup" id="scroll-up">
+        <a href="#home" class="scrollup" id="scroll-up" aria-label="Return to the top of the page">
             <i class="ri-arrow-up-circle-line scrollup__icon"></i>
         </a>
 

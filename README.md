@@ -84,6 +84,8 @@ The website also includes a contact form that utilizes EmailJs to send user mess
 
 9/4/23
 
+- FIX(a11y): Improve site accessibility by adding ARIA labels, alt tags and resolving orphaned labels and contrast issues.
+
 - FIX(main): Replace pageYoffset with scrollY and rectify typo in scroll-behavior smooth.
 
 - FEAT(main): Improve SEO optimization with meta tags.
