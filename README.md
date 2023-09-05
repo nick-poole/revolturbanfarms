@@ -82,6 +82,10 @@ The website also includes a contact form that utilizes EmailJs to send user mess
 
 ## Commit Log
 
+9/4/23
+
+- FEAT(main): Improve SEO optimization with meta tags.
+
 7/5/23
 
 - BRANCH w3c: Update README.md and Fixed w3c validation issues
