@@ -84,6 +84,8 @@ The website also includes a contact form that utilizes EmailJs to send user mess
 
 9/4/23
 
+- FIX(main): Replace pageYoffset with scrollY and rectify typo in scroll-behavior smooth.
+
 - FEAT(main): Improve SEO optimization with meta tags.
 
 7/5/23
