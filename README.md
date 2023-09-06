@@ -84,6 +84,8 @@ The website also includes a contact form that utilizes EmailJs to send user mess
 
 9/5/23
 
+- FEAT(main): Improve responsive design by reformating about section layout.
+
 - FIX(a11y): Resolve heading contrast issues by applying overlays.
 
 9/4/23
